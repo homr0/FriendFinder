@@ -298,7 +298,7 @@
 
                         <p>Feel free to take the <a href="/survey">survey</a> again or return to the <a href="/">home</a> page.</p>
                     </div>
-                </div>>
+                </div>
             </div>
         </div>
     </div>
@@ -358,8 +358,11 @@
                 };
 
                 if(validate(userData)) {
+
+                    console.log(userData);
                     // Post the user data to get the most compathble friend.
-                    $.post("/api/friends", userData, function(data) {
+                    $.post("/api/friends", userData).done( function(data) {
+                        console.log(userData);
                         // Sets the name and photo of the compatible friend.
                         $("#friend-name").text(data.name);
                         $("#friend-photo").attr("src", data.photo);
