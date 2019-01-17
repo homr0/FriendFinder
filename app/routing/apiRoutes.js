@@ -14,7 +14,6 @@ module.exports = (app) => {
         var newUser = req.body;
 
         var scores = newUser.scores;
-        console.log(scores);
 
         // Check the differences between scores for each person in the friends data set.
         var newFriend = {};
