@@ -1,6 +1,5 @@
 // Dependencies
 var express = require("express");
-var bodyParser = require("body-parser");
 var path = require("path");
 
 // Global variables
@@ -8,9 +7,8 @@ var app = express();
 var PORT = process.env.PORT || 3000;
 
 // Express configuration
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true }));
-app.use(bodyParser.text());
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
 app.use('/assets', express.static(path.join(__dirname, './app/public/assets')));
 
