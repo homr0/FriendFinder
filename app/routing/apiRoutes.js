@@ -4,16 +4,14 @@ var friends = require("../data/friends.js");
 
 module.exports = (app) => {
     // Displays all friends.
-    app.get("/api/friends", function(req, res) {
+    app.get("/api/friends", (req, res) => {
         // Gets the data from the friends.js file.
         res.json(friends);
     });
 
     // Gets survey results and finds a compatible friend.
-    app.post("/api/friends", function(req, res) {
+    app.post("/api/friends", (req, res) => {
         var newUser = req.body;
-
-        var scores = newUser.scores;
 
         // Check the differences between scores for each person in the friends data set.
         var newFriend = {};
@@ -22,9 +20,7 @@ module.exports = (app) => {
         for(var i = 0; i < friends.length; i++) {
             var totalDifference = 0;
 
-            for(var j = 0; j < scores.length; j++) {
-                totalDifference += Math.abs(parseInt(scores[j]) - parseInt(friends[i].scores[j]));
-            }
+            for(var j = 0; j < newUser.scores.length; j++) totalDifference += Math.abs(parseInt(newUser.scores[j]) - parseInt(friends[i].scores[j]));
 
             if(totalDifference < closeness) {
                 closeness = totalDifference;
