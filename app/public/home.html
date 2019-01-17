@@ -9,38 +9,44 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Coiny|Rubik" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-    <style>
-        header {
-            font-family: "Coiny", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        }
-        main, footer {
-            font-family: "Rubik", Helvetica, sans-serif;
-        }
-    </style>
+    <link href="assets/css/style.css" rel="stylesheet">
 </head>
 
 <body>
     <div class="container">
-        <div class="row">
-            <div class="col s12">
-                <div class="card grey lighten-3">
-                    <div class="card-content">
-                        <h1 class="card-title">Friend Finder</h1>
+        <header>
+            <div class="row">
+                <div class="col s12">
+                    <h1 class="center-align">Friend Finder</h1>
+                </div>
+            </div>
+        </header>
 
-                        <p>Answer a few basic questions and we will find you a friend with the closest compatibility!</p>
-    
-                        <a class="btn-large" href="/survey">Go to Survey</a>
-                    </div>
+        <main>
+            <div class="row">
+                <div class="col s12 center-align">
+                    <div class="card" id="intro">
+                        <div class="card-content">
+                            <img src="http://i.imgur.com/xLYzSfL.jpg" alt="Animals being bros">
 
-                    <div class="card-action">
-                        <a href="/api/friends">API Friends List</a>
+                            <p>Answer a few basic questions and we will find you a friend with the closest compatibility!</p>
+                        </div>
 
-                        <a href="https://github.com/homr0/FriendFinder">GitHub Repository</a>
+                        <div class="card-action">
+                            <a class="btn-large blue waves-effect waves-blue" href="/survey">Go to Survey</a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </main>
+
+        <footer>
+            <div class="row">
+                <div class="col s12">
+                    <p><a href="/api/friends">API Friends List</a> | <a href="https://github.com/homr0/FriendFinder">GitHub Repository</a></p>
+                </div>
+            </div>
+        </footer>
     </div>
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>

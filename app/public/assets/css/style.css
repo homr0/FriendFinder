@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Coiny|Rubik');
+
+header {
+    font-family: "Coiny", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+main, footer {
+    font-family: "Rubik", Helvetica, sans-serif;
+}
+
+#intro img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
