@@ -4,7 +4,7 @@ Find yourself a new friend based on our compatibility-based survey.
 
 ## Instructions
 
-1. Go to the survey site.
+1. Go to the [survey site](https://rocky-thicket-37620.herokuapp.com/).
 2. Click on **Go to Survey**.
 3. Type in your **name**.
 4. Put a link to a **photo** of yourself.
