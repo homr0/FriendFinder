@@ -1,10 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Coiny|Rubik');
 
+body {
+    font-size: 100%;
+    font-family: "Rubik", Helvetica, sans-serif;
+    background-image: url("../images/houndstooth-pattern.png");
+}
+
 header {
     font-family: "Coiny", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
-main, footer {
-    font-family: "Rubik", Helvetica, sans-serif;
+
+#intro {
+    background-image: url("../images/retina_wood.png");
 }
 
 #intro img {
