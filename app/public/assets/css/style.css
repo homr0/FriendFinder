@@ -12,3 +12,8 @@ main, footer {
     max-width: 300px;
     height: auto;
 }
+
+#friend-photo {
+    max-height: 400px;
+    width: auto;
+}
