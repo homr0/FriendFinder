@@ -12,6 +12,8 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.text());
 
+app.use('/assets', express.static(path.join(__dirname, './app/public/assets')));
+
 // Handles routes.
 require("./app/routing/apiRoutes")(app);
 require("./app/routing/htmlRoutes")(app);

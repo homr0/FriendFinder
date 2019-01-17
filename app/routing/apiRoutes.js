@@ -14,6 +14,7 @@ module.exports = (app) => {
         var newUser = req.body;
 
         var scores = newUser.scores;
+        console.log(scores);
 
         // Check the differences between scores for each person in the friends data set.
         var newFriend = {};
@@ -23,7 +24,7 @@ module.exports = (app) => {
             var totalDifference = 0;
 
             for(var j = 0; j < scores.length; j++) {
-                totalDifference += Math.abs(scores[j] - friends[i].scores[j]);
+                totalDifference += Math.abs(parseInt(scores[j]) - parseInt(friends[i].scores[j]));
             }
 
             if(totalDifference < closeness) {
