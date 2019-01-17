@@ -126,5 +126,37 @@ module.exports = [
             "3",
             "4"
         ]
+    },
+    {
+        "name": "Clark",
+        "photo": "https://vignette.wikia.nocookie.net/superman/images/0/0a/Clarkkent-secretorigin.jpg/revision/latest?cb=20100916050519",
+        "scores": [
+            "5",
+            "3",
+            "5",
+            "3",
+            "1",
+            "4",
+            "2",
+            "1",
+            "5",
+            "1"
+        ]
+    },
+    {
+        "name": "Steve",
+        "photo": "https://media.comicbook.com/2017/11/steve-rogers-1060339-1280x0.jpg",
+        "scores": [
+            "4",
+            "4",
+            "4",
+            "3",
+            "2",
+            "3",
+            "4",
+            "1",
+            "4",
+            "2"
+        ]
     }
 ]
